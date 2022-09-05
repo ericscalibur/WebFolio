@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eric Summers Parkour</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+  window.onload = function ()
+  {
+    document.getElementById("video1").addEventListener("ended", function ()
+    {
+      document.getElementById("video2").play();
+      document.getElementById("video2").classList.remove("hide");
+      document.getElementById("video1").classList.add("hide")
+    });
+
+    document.getElementById("video2").addEventListener("ended", function ()
+    {
+      document.getElementById("video3").play();
+      document.getElementById("video3").classList.remove("hide");
+      document.getElementById("video2").classList.add("hide");
+    });
+
+    document.getElementById("video3").addEventListener("ended", function ()
+    {
+      document.getElementById("video4").play();
+      document.getElementById("video4").classList.remove("hide");
+      document.getElementById("video3").classList.add("hide");
+    });
+
+    document.getElementById("video4").addEventListener("ended", function ()
+    {
+      document.getElementById("video5").play();
+      document.getElementById("video5").classList.remove("hide");
+      document.getElementById("video4").classList.add("hide");
+    });
+
+    document.getElementById("video5").addEventListener("ended", function ()
+    {
+      document.getElementById("video1").play();
+      document.getElementById("video1").classList.remove("hide");
+      document.getElementById("video5").classList.add("hide");
+    });
+  }
+</script>
+<body>
+  <section class="fwh-section">
+    <div id="sliders">
+      <div class="parallelogram1"></div>
+      <div class="parallelogram2"></div>
+      <div class="parallelogram3"></div>
+    </div>
+    <!-- The video -->
+    <div class="videoContainer">
+      <video id="video1" class="video" autoplay muted>
+        <source src="vid/teaching-rolls.mp4" type="video/mp4">
+      </video>
+
+      <video id="video2" class="video hide" muted>
+        <source src="vid/big-jump.mp4" type="video/mp4">
+      </video>
+
+      <video id="video3" class="video hide" muted>
+        <source src="vid/exit-up.mp4" type="video/mp4">
+      </video>
+
+      <video id="video4" class="video hide" muted>
+        <source src="vid/teaching-drop-land-roll.mp4" type="video/mp4">
+      </video>
+
+      <video id="video5" class="video hide" muted>
+        <source src="vid/front-flip.mp4" type="video/mp4">
+      </video>
+
+    </div>
+  </section>
+  <section class="banner">
+
+    <h1 class="section-head">
+      Parkour Lessons for Teens/Adults
+    </h1>
+    <h3 class="section-subhead" style="font-style: oblique">with Coach Eric Summers</h3>
+  </section>
+  <section class="cards-section">
+    <div class="cards-container">
+      <div class="card">
+        <h1 class="card-head">All Levels</h1>
+        <p class="card-p" style="margin-bottom: 2em">
+          All experience levels are welcome. Whether you are new to parkour,
+          or you're wanting to advance your skills, lessons are tailored to meet your skill level.
+          Coach Eric has been instructing parkour to kids and adults for over 10 years!
+        </p>
+      </div>
+      <div class="card">
+        <h1 class="card-head">Different Locations</h1>
+        <p class="card-p" style="margin-bottom: 2em">
+          Meet at different spots around town for a variety of obstacles. Great way to
+          get familiar with all the best parkour spots in the Austin area.
+        </p>
+      </div>
+      <div class="card">
+        <h1 class="card-head">Private Lessons</h1>
+        <p class="card-p">
+          Progress even faster with focused attention. Got a specific challenge or skill you want to train?
+          Book a private lesson and level up!
+        </p>
+        <div class="card-button">
+          <a href="contact.html" rel="contact"><h2>Book Now</h2></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img style="position: relative; display: flex; width: 100vw; height: auto;" src="img/outdoor-warmup.jpeg" alt="outdoor-warmup">
+  <section class="testimonials">
+    <h1 class="section-head">Testimonials</h1>
+    <div class="testimonials-container">
+      <div class="card">
+        <div class="videoContainer">
+          <video id="video1" class="video" autoplay muted loop>
+            <source src="vid/selima-testimonial.mov" type="video/mp4">
+          </video>
+        </div>
+        <h3>"He's loving it!"</h3>
+      </div>
+      <div class="card">
+        <p style="margin-top: 30px" class="card-p">
+          "I really hope this message gets to the Parkour coach, Eric. Thank you. Thank you for engaging and including Levi.
+          It was his idea to do this and he is autistic and has severe social anxiety, so it’s been hard to find activities
+          for him that are inclusive. We just moved here, he struggles with making friends and such. I cried when he was
+          participating. I know it’s hard to tell but he enjoyed himself. Thank you so much, it means the world to us."
+        </p>
+        <h2 class="card-head" style="text-decoration: none; font-style: italic; margin: 1em;">~Levi's Mom</h1>
+      </div>
+      <div class="card">
+        <div class="videoContainer">
+          <video id="video1" class="video" autoplay muted loop>
+            <source src="vid/selima-testimonial2.mov" type="video/mp4">
+          </video>
+        </div>
+        <h3>"Huge thank you to his teacher, Mr. Eric!"</h3>
+      </div>
+    </div>
+  </section>
+  <div class="last-button">
+    <a href="contact.html" rel="contact"><h2>Book Now</h2></a>
+  </div>
+  <footer>
+    All Rights Reserved. Updated 2022.
+  </footer>
+</body>
+</html>

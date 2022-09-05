@@ -1,0 +1,362 @@
+
+body {
+  display: block;
+  margin: 0;
+  background-color: black;
+  width: 100vw;
+  height: auto;
+}
+
+.fwh-section {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.videoContainer {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+   }
+
+#sliders {
+  display: flex;
+  max-height: 100vh;
+}
+
+.parallelogram1 {
+	width: 42vw; left: -32vw;
+	height: 100vh; top:0px;
+  position: absolute;
+  z-index: 3;
+	transform: skew(20deg);
+	background: #4375d0;
+  animation-name: slideTransition1;
+  animation-duration: 4s;
+}
+
+.parallelogram2 {
+	width: 8.5vw; left: 10vw;
+	height: 100vh; top:0px;
+  position: absolute;
+  z-index: 2;
+	transform: skew(20deg);
+	background: #52a5d1;
+  opacity: .66;
+  animation-name: slideTransition2;
+  animation-duration: 4s;
+}
+
+.parallelogram3 {
+	width: 10vw; right: 0;
+	height: 100vh; top:0px;
+  position: absolute;
+  z-index: 1;
+	transform: skew(20deg);
+	background: #99b2c6;
+  opacity: .33;
+  animation-name: slideTransition3;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes slideTransition1 {
+  0%   {width: 100vw; left: -20vw;}
+  30%  {width: 40vw; left: -20vw; }
+  50%  {width: 38vw; left: -10vw;}
+  100%  {width: 42vw; left: -32vw;}
+}
+
+@keyframes slideTransition2 {
+  0%   {width: 134vh; left: 0vh;}
+  37%  {width: 35vh; left: 20vh; }
+  50%  {width: 68vh;}
+  100%  {width: 8.5vw; left: 10vw;}
+}
+
+@keyframes slideTransition3 {
+  0%   {width: 18vw; right: -18vw;}
+  45%  {width: 50vw;}
+  75%  {width: 10vw;}
+  100% {width: 10vw; right: 0;}
+}
+
+.cards-section {
+  flex-direction: column;
+  display: block;
+  position: relative;
+  height: 64vh;
+  width: 100vw;
+  margin: 0;
+  background-color: black;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+
+  margin-bottom: 50px;
+  font-size: 10vh;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  font-size: 8vh;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.cards-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  font-family: 'Kanit', sans-serif;
+}
+
+.card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-color: cyan;
+  border-width: 2px;
+  border-radius: .5em;
+  width: 20vw;
+  height: 50vh;
+  margin: 30px;
+}
+
+.card-head {
+  font-size: 2em;
+  color: black;
+  text-decoration: underline;
+}
+
+.card-p {
+  margin: 1em;
+  justify: center;
+  text-indent:20px;
+  font-size: 1em;
+}
+
+.card-button {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 1em;
+  text-align: center;
+  margin: 2em;
+}
+
+.card-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-button:hover {
+  background-color: lightblue;
+  border-color: lightblue;
+}
+
+a:hover {
+  color: white;
+}
+
+.testimonials {
+  margin-top: 8vh;
+  margin-left: 1vw;
+  height: 100vh;
+}
+
+.testimonials-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+.testimonials h1 {
+  font-size: 10vh;
+}
+
+.testimonials h2 {
+  font-size: 4vh;
+  margin: auto;
+}
+
+.testimonials h3 {
+  font-size: 3vh;
+  margin: auto;
+  color: black;
+  text-decoration: none;
+}
+.testimonials .card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-color: cyan;
+  border-width: 2px;
+  border-radius: .5em;
+  width: 80vw;
+  height: 65vh;
+  margin: 30px;
+}
+
+.last-button {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 1em;
+  text-align: center;
+  margin: auto;
+  width: 80vw;
+  height: 10vh;
+  margin-bottom: 100px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.last-button a {
+  text-decoration: none;
+  color: cyan;
+}
+
+.last-button:hover {
+  background-color: lightblue;
+  border-color: lightblue;
+}
+
+.last-button a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin-top: 2vh;
+  }
+
+  .fwh-section {
+    height: 85vh;
+  }
+  .video {
+    margin-top: 0vh;
+    width: auto;
+    margin-left: -100vw;
+  }
+
+  .parallelogram1 {
+    left: -34vw;
+    height: 85vh;
+  }
+
+  .parallelogram2 {
+    width: 38vw;
+    height: 85vh;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+  }
+
+  .parallelogram3 {
+    width: 18vh;
+    height: 85vh;
+    top: 0; left: 112vw;
+    right: 0; bottom: 0;
+  }
+
+  .banner {
+    height: 50vh;
+    margin: auto;
+  }
+
+  .section-head {
+    font-size: 7vh;
+    width: 100vw;
+  }
+
+  .section-subhead {
+    font-size: 2em;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    display: block;
+    position: relative;
+    height: fit-content;
+  }
+
+  .testimonials video {
+    width: inherit;
+    margin: 0;
+  }
+
+  .testimonials h1 {
+    font-size: 6vh;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    height: 162vh;
+  }
+
+  .cards-section {
+    width: 100vw;
+    height: 115vh;
+    margin: auto;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 100vh;
+  }
+
+  .card {
+    width: 80vw;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  iframe {
+    width: 100vw;
+  }
+}
