@@ -216,7 +216,7 @@ a:hover {
 .testimonials h3 {
   font-size: 3vh;
   margin: auto;
-  
+
   color: black;
   text-decoration: none;
 }
@@ -260,7 +260,8 @@ a:hover {
 
 footer {
   height: 10vh;
-  width: 100vw;
+  width: 0vw;
+  margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,6 +274,25 @@ footer {
     margin-top: 2vh;
   }
 
+  @keyframes slideTransition1 {
+    0%   {width: 100vw; left: -20vw;}
+    30%  {width: 60vw; left: -46vw; }
+    50%  {width: 80vw; left: -40vw;}
+    100%  {width: 60vw; left: -46vw;}
+  }
+  @keyframes slideTransition2 {
+    0%   {width: 134vh; left: 0vh;}
+    37%  {width: 30vh; left: 0vh; }
+    50%  {width: 50vh; left: 0vh; }
+    100%  {width: 38vw; left: 0vw;}
+  }
+
+  @keyframes slideTransition3 {
+    0%   {width: 18vw; left: 18vw;}
+    50%  {width: 50vw; }
+    100% {width: 50vw; left: 112vw}
+  }
+
   .fwh-section {
     height: 85vh;
   }
@@ -283,14 +303,15 @@ footer {
   }
 
   .parallelogram1 {
-    left: -34vw;
+    width: 60vw;
+    left: -46vw;
     height: 85vh;
   }
 
   .parallelogram2 {
     width: 38vw;
     height: 85vh;
-    top: 0; left: 0;
+    top: 0; left: 0vw;
     right: 0; bottom: 0;
   }
 
